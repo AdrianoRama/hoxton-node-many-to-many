@@ -85,9 +85,9 @@ const interviews = [
 ]
 
 db.exec(`
+DROP TABLE IF EXISTS interviews;
 DROP TABLE IF EXISTS applicants;
 DROP TABLE IF EXISTS interviewers;
-DROP TABLE IF EXISTS interviews;
 
 CREATE TABLE IF NOT EXISTS applicants (
   id INTEGER,
